@@ -1,0 +1,11 @@
+@(users:List[models.User])
+
+@main("Sample scala-activerecord") {
+    
+    <ul>
+    @for(user <- users){
+    	<li>@user.name ( @user.age )</li>
+	}
+	</ul>
+    
+}
